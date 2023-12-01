@@ -1,0 +1,34 @@
+
+
+function setup() {
+    var canvas = createCanvas(800, 800);
+    canvas.parent("p5container");
+
+    background(30);
+    colorMode(HSB);
+   noStroke();
+
+    for(i=0; i<200; i++){
+        circles()
+    }
+    
+
+ 
+}
+
+function draw() {
+
+}
+
+function circles(){
+
+    var x = random(height);
+    var y = random(width);
+    var d = random(5, 150);
+    var hue = random(120, 255);
+
+    fill(hue, 255, 255, 0.1);
+    ellipse(x, y, d);
+
+
+}
